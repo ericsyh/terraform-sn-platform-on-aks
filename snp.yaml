@@ -1,0 +1,8 @@
+initialize: true
+
+components:
+  pulsar_detector: false
+
+monitoring:
+  node_exporter: false
+  alert_manager: false
