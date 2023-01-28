@@ -60,7 +60,8 @@ brew install hashicorp/tap/terraform
 1. Clone this repo
 
 ```
-git clone git@github.com:ericsyh/terraform-sn-platform-on-aks.git
+git clone https://github.com/ericsyh/terraform-sn-platform-on-aks.git
+cd terraform-sn-platform-on-aks
 ```
 
 2. Paste the `appId` and `password` in the `terraform.tfvars` file
