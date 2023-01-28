@@ -80,3 +80,9 @@ terraform apply --auto-approve
 ```
 az aks get-credentials --resource-group $(terraform output -raw resource_group_name) --name $(terraform output -raw kubernetes_cluster_name)
 ```
+
+6. Cleanup your provision:
+
+```
+terraform destroy --auto-approve
+```
