@@ -3,7 +3,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "default" {
-  name     = "aks-sn-platform-rg"
+  name     = "sn-platform-aks-rg"
   location = "East US 2"
 
   tags = {

@@ -5,10 +5,10 @@ provider "azurerm" {
 resource "random_pet" "suffix" {}
 
 resource "azurerm_kubernetes_cluster" "default" {
-  name                = "aks-sn-platform-${random_pet.suffix.id}"
+  name                = "sn-platform-aks-${random_pet.suffix.id}"
   location            = var.location
   resource_group_name = var.resource_group_name
-  dns_prefix          = "aks-sn-platform"
+  dns_prefix          = "sn-platform-aks"
   kubernetes_version  = "1.23.12"
 
   default_node_pool {
